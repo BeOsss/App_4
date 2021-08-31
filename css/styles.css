@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: black;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+body{
+    background-image: url("../images/bg-desktop.svg");
+    background-color: hsla(257, 40%, 49%, 0.9);
+    margin: 50px auto;
+}
+.clear-fix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* header */
+header{
+    padding: 40px;
+}
+/* content */
+.row{
+    padding: 40px;
+}
+.col{
+    float: left;
+    width: 50%;
+}
+div.col.mock-up{
+    /* width: 60%; */
+}
+div.col.description{
+    /* width: 40%; */
+    padding-left: 40px;
+}
+div.col.description p{
+    margin-top: 40px;
+    font-size: 60%;
+}
+.btn{
+    margin-top: 40px;
+    width: 30%;
+    padding: 20px;
+    color: hsl(257, 40%, 49%);
+    font-size: 80%;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 1px 10px 10px  rgba(0, 0, 0, 0.2);
+}
+/* social icons */
+.social-icons{
+    text-align: right;
+    margin: 20px 40px;
+}
+.social-icons span{
+    padding: 10px 15px;
+    border-style: solid;
+    border-radius: 50%;
+}
+.fb{
+    padding: 0 6.5px;
+}
+.btn:hover, .btn:active{
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+.social-icons span:hover, .social-icons span:active{
+    color: hsl(300, 69%, 71%);
+    border-style: hsl(300, 69%, 71%) solid;
+}
